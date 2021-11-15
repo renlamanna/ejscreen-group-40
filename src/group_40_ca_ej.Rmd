@@ -1,0 +1,23 @@
+---
+title: "Group 40 CA pollution burden"
+author: "Renee LaManna & Jaxon Stuhr"
+date: "11/15/2021"
+output: html_document
+---
+
+## Setup
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+## Read in data
+
+```{r}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
+
