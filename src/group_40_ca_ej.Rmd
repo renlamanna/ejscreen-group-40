@@ -7,8 +7,8 @@ output: html_document
 
 ## Setup
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(janitor)
 library(here)
@@ -38,3 +38,4 @@ ggplot(ces, aes(x = white_percent, y = ces_3_0_score)) +
 
 ```
 
+**Figure 1.** CalEnviroEcreen 3.0 score which combines both pollution burden and population characteristics for an aggregate score for a given % white population. Red indicates a high score, while green indicates a low score.
