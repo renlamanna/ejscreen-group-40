@@ -38,4 +38,4 @@ ggplot(ces, aes(x = white_percent, y = ces_3_0_score)) +
 
 ```
 
-**Figure 1.** CalEnviroEcreen 3.0 score which combines both pollution burden and population characteristics for an aggregate score for a given % white population. Red indicates a high score, while green indicates a low score.
+**Figure 1.** CalEnviroScreen 3.0 score which combines both pollution burden and population characteristics for an aggregate score for a given % white population. 
