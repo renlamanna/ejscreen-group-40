@@ -39,3 +39,14 @@ ggplot(ces, aes(x = white_percent, y = ces_3_0_score)) +
 ```
 
 **Figure 1.** CalEnviroScreen 3.0 score which combines both pollution burden and population characteristics for an aggregate score for a given % white population. 
+
+
+## Summary and Analysis:
+
+The primary trend we see in this data is that as the percent of the population that is white increases, the CalEnviroScreen 3.0 score decreases, meaning the environmental burden is smaller in whiter areas.
+
+## Data Citation:
+
+OEHHA. CalEnviroScreen 3.0. 2017. https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30. Accessed 7 Jun 2017.
+
+
