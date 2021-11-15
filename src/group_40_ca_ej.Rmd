@@ -17,15 +17,24 @@ library(here)
 ## Read in data
 
 ```{r}
+# read in data and clean names
 ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
   clean_names()
 ```
 
 ```{r}
+# ggplot percent white vs pollution burden
 ggplot(ces, aes(x = white_percent, y = ces_3_0_score)) + 
+  # hex bin
   geom_hex() +
+  # define low, high colors
+  scale_fill_gradient(low = "green", high = "red") + 
+  # add labels
   labs(x = "% white population",
-       y = "CalEnviroScreen 3.0 score")
+       y = "CalEnviroScreen 3.0 score") +
+  # update theme
+  theme_minimal()  
+
 
 ```
 
